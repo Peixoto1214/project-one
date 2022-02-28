@@ -1,0 +1,46 @@
+*{
+    font-family: 'lora', sans-serif;
+    color: white;
+}
+a{
+    color:white;
+}
+a:visited{
+    color: white;
+}body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'lora', sans-serif;
+    background-color: black;
+   
+}
+
+/* navigation*/
+.dp_navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    align-items: center;
+}
+.dp_nav_menu{
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+    
+
+}
+.dp_nav_menu li a{ 
+    text-decoration: none;
+}
+
+
+
+.dp_nav_logo{
+    width: 100px;
+    height: 100px;
+}
+
+/*footer*/
+.dp_footer{
+    text-align: center;
+}
