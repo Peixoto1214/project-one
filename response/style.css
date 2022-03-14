@@ -1,6 +1,7 @@
 *{
     font-family: 'lora', sans-serif;
     color: white;
+    
 }
 a{
     color:white;
@@ -8,8 +9,9 @@ a{
 a:visited{
     color: white;
 }
-body{
+.projectBody{
     max-width: 1500px;
+    min-width: 720px;
     margin: 0 auto;
     font-family: 'lora', sans-serif;
     background-color: black;
@@ -17,7 +19,7 @@ body{
 }
 
 /* navigation*/
-.dp_navbar{
+.dp-navbar{
     display: flex;
     justify-content: space-between;
     margin: 0 20px;
@@ -25,25 +27,140 @@ body{
     font-size: 20px;
     
 }
-.dp_nav_menu{
+.dp-nav-menu{
     list-style-type: none;
     display: flex;
     gap: 100px;
     
 
 }
-.dp_nav_menu li a{ 
+.dp-nav-menu li a{ 
     text-decoration: none;
 }
 
 
 
-.dp_nav_logo{
-    width: 150px;
-    height: 150px;
+.dp-nav-logo{
+    width: 100px;
+    height: 100px;
+}
+/* portfolio page*/
+.dp-portfolio-grid{
+    display: grid;
+    margin: 0 auto;
+    background-color: pink;
+    text-align: center;
+    grid-template-columns:  1fr 1fr 1fr;
+    margin-top: 3rem;  
+       
+}
+.dp-grid-containers{
+    
+    max-width: 500px;
+    min-height: 25rem;
+    border: 3px solid black;    
+}
+.dp-portfolio-holder{
+    width:1400px;
+    margin: 0 auto;
+}
+
+    
+/* Landing Page paragraphs*/
+.dp-bio{
+    width:75%;
+    margin: 0 auto;
+    
+}
+.intro{
+    margin-top: 3rem;
+}
+.dp-bio p{ 
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    font-size: 2.1rem; 
+}
+.dp-nav-mobile{
+    display: none ;
+}
+@media screen and (max-width: 760px){
+    .dp-bio p{
+        font-size: 1.5rem;}
+    .desktop{
+        display: none;
+    }
+    .dp-nav-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 10px 0px 10px;
+    }
+    .dp-nav-logo{ 
+        height: 50px;
+        width: 50px;
+    }
+    
+    .dp-nav-menu-mobile{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        gap:35px;
+        
+    }
+    .dp-nav-menu-mobile li{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        padding: 10px 0px 10px 0px;
+       
+    }
+
+    .dp-nav-menu-mobile a{
+        text-decoration: none;  
+    }
+    .navShow{
+        display: none;
+    }
+        
+    
+}
+
+/*portfolio page special*/
+
+@media screen and (max-width: 1200px) and (min-width: 721px){
+    .dp-portfolio-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;        
+    }
+    .dp-grid-containers{
+        min-width: 100%;   
+    }
+    .dp-portfolio-holder{
+        max-width: 1100px;
+        min-width: 800px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .dp-portfolio-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .dp-grid-containers{
+        min-width: 100%;
+       
+    }
+    .dp-portfolio-holder{
+        max-width: 700px;
+        padding: 10px
+    }
+
 }
 
 /*footer*/
-.dp_footer{
-    text-align: center;
+    .dp-footer p{
+        text-align: center;
 }
