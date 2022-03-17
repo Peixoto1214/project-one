@@ -50,7 +50,7 @@ a:visited{
     margin: 0 auto;
     background-color: pink;
     text-align: center;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 3rem;  
        
 }
@@ -60,11 +60,15 @@ a:visited{
     min-height: 25rem;
     border: 3px solid black;    
 }
+
 .dp-portfolio-holder{
     max-width:1400px;
     margin: 0 auto;
 }
-
+.dp-grid-containers-large{
+    grid-column: span 2;
+    height: 35rem;
+}
     
 /* Landing Page paragraphs*/
 .dp-bio{
