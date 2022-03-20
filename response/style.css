@@ -1,13 +1,16 @@
 *{
     font-family: 'lora', sans-serif;
     color: white;
+    text-decoration: none;
     
 }
 a{
     color:white;
+    
 }
 a:visited{
     color: white;
+    
 }
 .projectBody{
     max-width: 1500px;
@@ -69,6 +72,24 @@ a:visited{
     grid-column: span 2;
     height: 35rem;
 }
+.dp-grid-containers a img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.dp-paragraph-description{
+    text-align: justify;
+    margin:5px;
+}
+.dp-paragraph-description-built{
+    text-align: center;
+}
+.dp-project-built{
+    list-style-type: none;
+    text-align: justify;
+}
+
+
     
 /* Landing Page paragraphs*/
 .dp-bio{
@@ -127,6 +148,7 @@ a:visited{
     .navShow{
         display: none;
     }
+    
         
     
 }
@@ -136,22 +158,46 @@ a:visited{
 @media screen and (max-width: 1200px) and (min-width: 721px){
     .dp-portfolio-grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(7, 1fr);
         justify-content: center;        
     }
+
     .dp-grid-containers{
-        min-width: 100%;   
+        min-width: 100%;  
+        grid-row: repeat (1fr);
+        
     }
     .dp-portfolio-holder{
         max-width: 900px;
         min-width: 800px;
         padding: 20px;
     }
+    .dp-grid-containers a img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .dp-paragraph-description{
+        margin:5px
+        }
+    .dp-paragraph-description-built{
+            
+        }
+    .dp-project-built{
+            list-style-type: none;
+            text-align: justify;
+        }
 }
 
 @media screen and (max-width: 720px){
     .dp-portfolio-grid{
-        grid-template-columns: 1fr 1fr ;
+        display: block;
+        grid-template-columns: repeat(7, 1fr);
+        justify-content: center;   
+    }
+    .dp-grid-containers-large{
+        grid-column: span 2;
+        height: 35rem;
     }
     .dp-grid-containers{
         min-width: 100%;
@@ -160,6 +206,15 @@ a:visited{
     .dp-portfolio-holder{
         max-width: 700px;
         padding: 10px
+    }
+    .dp-grid-containers a img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .dp-recipe-page{
+        max-width: 50%;
+        max-height: 50%;
     }
 
 }
