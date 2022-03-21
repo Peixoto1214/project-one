@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(event){
     for (let i = 0; i < smallCards.length; i++) {
     //my end goal is to swap my regular class for my large class
     smallCards[i].addEventListener('click', function(e){
-    
+    e.preventDefault();
     //add click event targeting class
     
     //when I click on a small card
