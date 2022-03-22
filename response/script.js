@@ -40,6 +40,33 @@ document.addEventListener('DOMContentLoaded', function(event){
            
 
     };
+
+    //validate email
+
+    //target the email input are
+    let mail = document.querySelector('form-control')
+    
+
+    //make sure all characters on email are valid
+    function ValidateEmail(mail) {
+        mail.preventDefault()
+        let theValue = document.querySelector('#exampleFormControlInput1').value;
+        console.log(theValue);
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(theValue))
+
+        {
+            document.querySelector('#exampleFormControlInput1').value = " "; 
+            document.querySelector('#exampleFormControlTextarea1').value = " "; 
+
+    //if it is not valid tell user it is not valid
+         return (true);  }
+        alert("You have entered an invalid email address!")
+         return (false)
+    
+    
+}
+document.querySelector('.dp-contact-form').addEventListener('submit', ValidateEmail)
+
        
 
    
